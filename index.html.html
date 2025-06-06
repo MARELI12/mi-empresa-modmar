@@ -1,0 +1,383 @@
+<ç!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>ModMar - Ropa Juvenil</title>
+  <style> 
+	  h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+p {
+  font-size: 70px;
+}	  
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      scroll-behavior: smooth;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #1f1f1f;
+      color: white;
+      padding: 15px 20px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      margin: 0;
+      display: inline-block;
+    }
+
+    nav {
+      float: right;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    section {
+      padding: 80px 20px 40px;
+      max-width: 900px;
+      margin: auto;
+      display: none;
+    }
+
+    section.active {
+      display: block;
+    }
+
+    h2 {
+      border-bottom: 2px solid #1f1f1f;
+      padding-bottom: 5px;
+    }
+
+    /* Carrusel */
+    .carousel-container {
+      position: relative;
+      overflow: hidden;
+      max-width: 900px;
+      margin: 20px auto;
+    }
+
+    .carousel-wrapper {
+      display: flex;
+      transition: transform 0.5s ease;
+    }
+
+    .carousel-wrapper img,
+    .carousel-wrapper video {
+      width: 250px;
+      height: 250px;
+      margin-right: 10px;
+      border-radius: 10px;
+      object-fit: cover;
+      background-color: #ddd;
+    }
+
+    .carousel-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(31, 31, 31, 0.7);
+      border: none;
+      color: white;
+      padding: 10px;
+      cursor: pointer;
+      font-size: 18px;
+      border-radius: 50%;
+      user-select: none;
+      z-index: 10;
+    }
+
+    .prev-btn {
+      left: 10px;
+    }
+
+    .next-btn {
+      right: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>ModMar</h1>
+  <nav>
+    <a onclick="mostrarSeccion('presentacion')">Inicio</a>
+    <a onclick="mostrarSeccion('quienes')">¿Quiénes somos?</a>
+    <a onclick="mostrarSeccion('historia')">Historia</a>
+    <a onclick="mostrarSeccion('galeria-imagenes')">Galería de Imágenes</a>
+    <a onclick="mostrarSeccion('galeria-videos')">Galería de Videos</a>
+    <a onclick="mostrarSeccion('productos')">Productos</a>
+    <a onclick="mostrarSeccion('contacto')">Contacto</a>
+    <a onclick="mostrarSeccion('distribucion')">Distribución</a>
+  </nav>
+</header>
+
+<!-- Secciones -->
+<section id="presentacion" class="active">
+  <h2>Bienvenidos a nuestra empresa</h2>
+  <p>ModMar es una marca mexicana de ropa juvenil que nace con la convicción de que la moda es mucho más que una tendencia: es una forma de expresión personal, una herramienta de identidad y un reflejo del espíritu joven que busca destacarse, crear y transformar. 
+  <p>Nuestra empresa surge del deseo de ofrecer a los adolescentes y jóvenes un espacio donde puedan encontrar prendas que conecten con su forma de ser, pensar y sentir.
+
+  <p>En ModMar entendemos que la juventud es una etapa de descubrimiento, energía y cambio constante. 
+  <p>Por eso, cada una de nuestras colecciones está diseñada para acompañar a nuestros clientes en su día a día, en sus momentos importantes y en su búsqueda por definir quiénes son. <p>Apostamos por una moda que no impone, sino que inspira; que no limita, sino que libera.
+
+  <p>Nos especializamos en ropa urbana, casual y contemporánea, ideal para quienes buscan comodidad, estilo y autenticidad en una sola prenda. Utilizamos materiales de calidad, cómodos y duraderos, adaptados al ritmo de vida de las nuevas generaciones. 
+  <p>Nuestros diseños incorporan elementos culturales, gráficos modernos, frases que conectan con la juventud, y colores que reflejan la diversidad y fuerza de cada persona.
+
+  <p>ModMar no solo vende ropa: crea comunidad. Queremos ser una plataforma para jóvenes creativos, soñadores y valientes que buscan expresarse sin miedo, que están orgullosos de su estilo y que entienden la moda como un medio para contar su historia. 
+  <p>Nos comprometemos a escuchar las voces juveniles, a representar su diversidad y a ser parte activa de su crecimiento personal y social.
+
+  <p>Con un enfoque accesible, inclusivo y auténtico, ModMar se perfila como una marca fresca, moderna y consciente, lista para posicionarse como una de las favoritas en el mercado juvenil mexicano. 
+  <p>Porque en ModMar, tu estilo no sigue reglas… lo crea.
+</p>
+</section>
+
+<section id="quienes">
+  <h2>¿Quiénes somos?</h2>
+<p>Misión
+
+<p>En ModMar tenemos la misión de diseñar, producir y ofrecer ropa juvenil innovadora, auténtica y accesible que refleje la identidad, creatividad y diversidad de las nuevas generaciones. 
+<p>Buscamos empoderar a los jóvenes mediante prendas que no solo sigan tendencias, sino que las inspiren. Cada una de nuestras colecciones es pensada para acompañar a nuestros clientes en su expresión personal, su estilo de vida y su transformación constante.
+<p>Nos comprometemos con la calidad, la inclusión y la responsabilidad social, contribuyendo al bienestar de nuestra comunidad y al desarrollo sustentable de la industria de la moda.
+
+<p>Visión
+
+<p>Nuestra visión es consolidarnos como la marca líder de ropa juvenil en México y América Latina, reconocida por su propuesta fresca, urbana y vanguardista que rompe con los estándares tradicionales de la moda. 
+<p>Queremos ser una plataforma para jóvenes creativos que buscan diferenciarse, fomentar una comunidad de expresión libre y representar la voz de una generación que apuesta por el cambio, la autenticidad y la innovación. 
+<p>En el futuro, visualizamos a ModMar como una empresa con fuerte presencia digital, proyección internacional y un compromiso firme con el medio ambiente y la inclusión social.
+	
+<p>Objetivo general
+		
+<p> Desarrollar una marca de ropa juvenil que combine diseño innovador, calidad accesible y fuerte identidad cultural, con el propósito de posicionarse en el mercado nacional como una opción confiable, moderna y representativa de la juventud mexicana.
+     
+	
+<p> Objetivos especificos
+	
+<p> 1. Diseñar y lanzar al mercado al menos dos colecciones anuales de ropa juvenil que integren tendencias globales con elementos culturales y creativos locales, asegurando que cada prenda cumpla con altos estándares de calidad, comodidad y estilo.
+
+
+<p>2. Implementar una estrategia de comunicación digital y redes sociales efectiva, que permita a ModMar conectar de forma directa con su público objetivo, generar una comunidad juvenil activa en línea y aumentar el alcance de la marca en un 50% en los primeros dos años de operación.
+
+
+
+</strong></p>
+</section>
+
+<section id="historia">
+  <h2>Nuestra historia</h2>
+  <p>Historia de la empresa...¿Cómo surgió la empresa?
+
+<p>ModMar nació del sueño compartido de un grupo de jóvenes emprendedores apasionados por la moda, el diseño y la cultura juvenil. 
+	<p>Todo comenzó como una conversación informal entre amigos que notaban la falta de opciones de ropa que realmente representaran su estilo, sus ideas y su forma de ver el mundo. <p>Sentían que muchas marcas estaban desconectadas de lo que los jóvenes realmente buscan: autenticidad, libertad, creatividad y comodidad.
+
+<p>Inspirados por su entorno urbano, la música que escuchaban, las calles de su ciudad y el arte gráfico, decidieron crear una marca que hablara su mismo idioma. 
+	<p>Fue así como, en una pequeña habitación convertida en taller, empezaron a diseñar sus primeras prendas: camisetas con frases poderosas, sudaderas con estampados llamativos y pantalones cómodos con estilo único.
+
+<p>Con pocos recursos, pero con mucha pasión, empezaron a vender entre amigos, en bazares juveniles y en redes sociales. 
+	<p>La respuesta fue inmediata: los jóvenes se sentían identificados con ModMar porque no era solo ropa, era una forma de expresarse. 
+		<p>Poco a poco, la marca fue creciendo, se formalizó como empresa, y empezó a tener presencia en eventos, ferias y plataformas digitales.
+
+<p>Hoy, ModMar sigue fiel a su esencia: representar a una juventud fuerte, diversa, valiente y creativa, que no tiene miedo de ser diferente. 
+	<p>La empresa continúa expandiéndose, innovando y escuchando a su comunidad para seguir siendo más que una marca: un movimiento juvenil.
+		
+		<p>Historia de la ropa en tiempos pasados 
+
+<p>La ropa ha acompañado al ser humano desde tiempos prehistóricos, inicialmente como una necesidad para protegerse del clima y del entorno. 
+	<p>En sus inicios, las prendas se elaboraban con pieles de animales y fibras naturales. Con el paso del tiempo, la ropa fue adquiriendo un significado más profundo: además de funcional, se convirtió en símbolo de cultura, estatus y pertenencia social.
+
+<p>Durante la antigüedad, civilizaciones como la egipcia, la griega y la romana desarrollaron estilos propios. 
+	<p>En Egipto, por ejemplo, se usaban túnicas ligeras hechas de lino, mientras que los griegos usaban chitones y los romanos togas, prendas que además reflejaban el rango social de quien las portaba.
+
+<p>En la Edad Media, la moda estaba fuertemente influenciada por la religión y la nobleza. Los trajes eran pesados, con telas ricas y bordados detallados, y los colores también indicaban jerarquía. 
+	<p>Durante el Renacimiento, la ropa comenzó a reflejar el arte y la individualidad, con diseños más elaborados y personalizados.
+
+<p>En los siglos XVIII y XIX, con la Revolución Industrial, la ropa se volvió más accesible gracias a la producción en masa. 
+	<p>Surgieron nuevas telas, cortes y modas europeas que influenciaron al mundo entero. En el siglo XX, la moda se volvió una industria global: los estilos cambiaban rápidamente con cada década, desde los vestidos flapper de los años 20, los jeans de los 50, hasta la ropa urbana y deportiva de los 80 y 90.
+
+<p>Hoy, la ropa no solo cubre una necesidad o marca tendencia, sino que se ha transformado en un medio de expresión personal, cultural y artística. 
+	<p>Es en ese contexto que nacen marcas como ModMar, herederas de una historia textil milenaria, pero con una visión fresca y contemporánea.
+</p>
+</section>
+
+<section id="galeria-imagenes">
+  <h2>Galería de Imágenes</h2>
+  <div class="carousel-container">
+    <button class="carousel-btn prev-btn" onclick="moveCarousel('images', -1)">&#10094;</button>
+    <div id="carousel-images" class="carousel-wrapper">
+      <img src="img/ropa1.jpg" alt="Diseño 1">
+      <img src="img/ropa2.avif" alt="Diseño 2">
+      <img src="img/ropa3.avif" alt="Diseño 3">
+      <img src="img/ropa4.jpg" alt="Diseño 4">
+      <img src="img/ropa5.jpg" alt="Diseño 5">
+      <img src="img/ropa6.jpg" alt="Diseño 6">
+      <img src="img/ropa7.jpg" alt="Diseño 7">
+      <img src="img/ropa8.jpg" alt="Diseño 8">
+      <img src="img/ropa9.jpg" alt="Diseño 9">
+      <img src="img/ropa10.webp" alt="Diseño 10">
+	  <img src="img/ropa11.webp" alt="Diseño 1">
+      <img src="img/ropa12.jpg" alt="Diseño 2">
+      <img src="img/ropa13.webp" alt="Diseño 3">
+      <img src="img/ropa14.avif" alt="Diseño 4">
+      <img src="img/ropa15.avif" alt="Diseño 5">
+      <img src="img/ropa16.webp" alt="Diseño 6">
+      <img src="img/ropa17.jpg" alt="Diseño 7">
+      <img src="img/ropa18.avif" alt="Diseño 8">
+      <img src="img/ropa19.jpg" alt="Diseño 9">
+      <img src="img/ropa20.jpg" alt="Diseño 10">
+    </div>
+    <button class="carousel-btn next-btn" onclick="moveCarousel('images', 1)">&#10095;</button>
+  </div>
+</section>
+
+<section id="galeria-videos">
+  <h2>Galería de Videos</h2>
+  <div class="carousel-container">
+    <button class="carousel-btn prev-btn" onclick="moveCarousel('videos', -1)">&#10094;</button>
+    <div id="carousel-videos" class="carousel-wrapper">
+      <video controls><source src="videos/video1.mp4" type="video/mp4"></video>
+      <video controls><source src="videos/video2.mp4" type="video/mp4"></video>
+      <video controls><source src="videos/video3.mp4" type="video/mp4"></video>
+	  <video controls><source src="videos/video4.mp4" type="video/mp4"></video>
+      <video controls><source src="videos/video5.mp4" type="video/mp4"></video>
+      <video controls><source src="videos/video6.mp4" type="video/mp4"></video>
+	  <video controls><source src="videos/video7.mp4" type="video/mp4"></video>
+      <video controls><source src="videos/video8.mp4" type="video/mp4"></video>
+      <video controls><source src="videos/video9.mp4" type="video/mp4"></video>
+	  <video controls><source src="videos/video10.mp4" type="video/mp4"></video>
+    </div>
+    <button class="carousel-btn next-btn" onclick="moveCarousel('videos', 1)">&#10095;</button>
+  </div>
+</section>
+
+<section id="productos">
+  <h2>Producto</h2>
+	<p> "¡¡¡Descubre nuestra colección de ropa de modas a precios irresistibles!!!"
+		<p>En nuestra tienda, encontrarás una amplia variedad de productos para todos los gustos y estilos. 
+			<p>Desde camisas y pantalones hasta vestidos y accesorios, tenemos todo lo que necesitas para renovar tu armario.
+				<p>¡Explora nuestra selección y encuentra tus favoritos!
+					<p>
+  <p><table border="2" width= "500px">
+	<tr>
+		<th>PRODUCTO</th>
+		<th>PRECIO</th>
+		</tr>
+	    <tr>
+			<td>CAMISA</td>
+			<td>$150</td>
+	</tr>
+	<tr>
+			<td>PANTALÓN</td>
+			<td>$300</td>
+	</tr>
+	<tr>
+			<td>VESTIDO</td>
+			<td>$350</td>
+	</tr>
+	<tr>
+			<td>CHAQUETA</td>
+			<td>$300</td>
+	</tr>
+	<tr>
+			<td>ZAPATOS</td>
+			<td>$250</td>
+	</tr>
+	<tr>
+			<td>BLUSA</td>
+			<td>$300</td>
+	</tr>
+	<tr> 
+			<td>FALDA</td>
+			<td>$180</td>
+	</tr>
+	<tr>
+			<td>SUDADERA</td>
+			<td>$350</td>
+	</tr>
+	<tr>
+			<td>GORRA</td>
+			<td>$180</td>
+	</tr>
+	<tr>
+			<td>CINTURON</td>
+			<td>$150</td>
+	</tr>
+	</table>
+	
+	<p>¡No te pierdas la oportunidad de renovar tu armario con nuestros productos de moda!
+		<p>Si compras del 28 de mayo al 10 de junio obtendrás un descuento del 30%, aprovecha la oferta!!!!!!!
+	
+</section>
+
+<section id="contacto">
+  <h2>Contacto</h2>
+  <p>Teléfono:71-21-34-55-24
+	  <p>Correo electronico: adimareli099@gmail.com
+		  <p>Direccion: Local encontrado en San Cristobal de los Baños, Ixtlahuaca
+			  <p>Horario: de 8 a.m a 7 p.m
+				  <p>Nos puedes encontrar en las siguientes plataformas!!!
+					  <p>Intagram: @empresamodmar
+						  <p>Facebook: EmpresaModMar
+</section>
+
+<section id="distribucion">
+  <h2>Distribución</h2>
+<p>- Costos de envío:
+<p>- Envío estándar: $5
+<p>- Envío exprés: $10
+<p>- Tiempo de entrega:
+<p>- Envío estándar: 3-5 días hábiles
+<p>- Envío exprés: 1-2 días hábiles
+<p>- Métodos de envío: Correo o paqueteria
+<p>- Áreas de entrega: Localidad o puntos medios cercanos.
+
+<p>Política de devolución y reembolso
+
+<p>- Política de devolución: Los clientes pueden devolver productos dentro de los 30 días posteriores a la entrega.
+<p>- Política de reembolso: Los reembolsos se procesarán dentro de los 5 días hábiles posteriores a la recepción del producto devuelto.	
+</section>
+
+<script>
+  function mostrarSeccion(id) {
+    const secciones = document.querySelectorAll('section');
+    secciones.forEach(seccion => seccion.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  const visibleItems = 3;
+  const carouselState = { images: 0, videos: 0 };
+
+  function moveCarousel(type, direction) {
+    const carousel = document.getElementById(`carousel-${type}`);
+    const totalItems = carousel.children.length;
+    const maxIndex = totalItems - visibleItems;
+
+    carouselState[type] += direction;
+    if (carouselState[type] < 0) carouselState[type] = 0;
+    if (carouselState[type] > maxIndex) carouselState[type] = maxIndex;
+
+    const translateX = -carouselState[type] * 260; // 250px width + 10px margin
+    carousel.style.transform = `translateX(${translateX}px)`;
+  }
+</script>
+
+</body>
+</html>
+
